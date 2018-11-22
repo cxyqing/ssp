@@ -15,7 +15,7 @@ import java.io.Writer;
 import java.util.Date;
 
 @SessionAttributes(value = {"user"},types = {String.class})
-@RequestMapping("/springmvc")
+@RequestMapping("/mvc")
 @Controller
 public class MvcController {
 

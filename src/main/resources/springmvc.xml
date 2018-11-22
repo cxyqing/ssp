@@ -18,8 +18,8 @@
         <property name="order" value="100"></property>
     </bean>
 
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean>
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean>-->
 
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename" value="i18n"></property>
@@ -29,5 +29,6 @@
     <mvc:view-controller path="/success" view-name="success"></mvc:view-controller>
     <!--<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"></bean>
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"></bean>-->
-    <!--<mvc:annotation-driven />-->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+    <mvc:annotation-driven />
 </beans>
